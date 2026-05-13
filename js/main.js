@@ -1,5 +1,3 @@
-
-
 /* ===== COMPONENT LOADER ===== */
 async function loadComponent(selector, filePath) {
   const target = document.querySelector(selector);
@@ -47,6 +45,7 @@ function setActiveNavLink() {
     }
   });
 }
+
 /* ===== HAMBURGER ===== */
 function initHamburger() {
   const hamburger = document.querySelector(".hamburger");
@@ -168,28 +167,30 @@ function initBackToTop() {
 document.addEventListener("DOMContentLoaded", async () => {
 
   if (
-  window.location.pathname.endsWith("index.html") ||
-  window.location.pathname === "/" ||
-  window.location.pathname === ""
-) {
-  initLoader();
-}
-const basePath = "../components/";
+    window.location.pathname.endsWith("index.html") ||
+    window.location.pathname === "/" ||
+    window.location.pathname === ""
+  ) {
+    initLoader();
+  }
 
-await loadComponent("#header-component", `${basePath}header.html`);
-await loadComponent("#footer-component", `${basePath}footer.html`);
-await loadComponent("#booking-component", `${basePath}booking-modal.html`);
-await loadComponent("#icons-component", `${basePath}icons.html`);
-await loadComponent("#cookie-banner-component", `${basePath}cookie-banner.html`);
-await loadComponent("#chatbot-component", `${basePath}ai-chatbot.html`);
+  /* ===== VERCEL FIX ===== */
+  const basePath = "/components/";
 
-if (typeof initCookieSystem === "function") {
-  initCookieSystem();
-}
+  await loadComponent("#header-component", `${basePath}header.html`);
+  await loadComponent("#footer-component", `${basePath}footer.html`);
+  await loadComponent("#booking-component", `${basePath}booking-modal.html`);
+  await loadComponent("#icons-component", `${basePath}icons.html`);
+  await loadComponent("#cookie-banner-component", `${basePath}cookie-banner.html`);
+  await loadComponent("#chatbot-component", `${basePath}ai-chatbot.html`);
 
-if (typeof initChatbot === "function") {
-  initChatbot();
-}
+  if (typeof initCookieSystem === "function") {
+    initCookieSystem();
+  }
+
+  if (typeof initChatbot === "function") {
+    initChatbot();
+  }
 
   setActiveNavLink();
   initHamburger();
@@ -197,8 +198,4 @@ if (typeof initChatbot === "function") {
   initBookingForm();
   initBackToTop();
 
-
 });
-
-
-
