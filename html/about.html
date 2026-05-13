@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SECURITY -->
+  <meta http-equiv="Content-Security-Policy" content="
+default-src 'self';
+img-src 'self' https: data:;
+script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://cdn.emailjs.com;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com;
+font-src 'self' https://fonts.gstatic.com data:;
+connect-src 'self' http://localhost:3000 https://api.emailjs.com https://www.google-analytics.com;
+frame-src https://www.google.com;
+object-src 'none';
+base-uri 'self';
+form-action 'self';
+frame-ancestors 'none';
+">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  <title>Despre Noi | Luxe Beauty</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Descoperă povestea Luxe Beauty – salon premium dedicat frumuseții, eleganței și perfecțiunii.">
+  <meta name="keywords" content="despre salon beauty, salon premium, unghii, gene">
+  <meta name="author" content="Luxe Beauty">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Despre Noi | Luxe Beauty">
+  <meta property="og:description" content="Povestea salonului premium Luxe Beauty.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/chatbot.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="header-component"></div>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="about-hero-content" data-aos="fade-up">
+    <h1>Despre Noi</h1>
+    <p>Mai mult decât beauty — experiență premium pentru femei care nu acceptă compromisuri.</p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="about-story">
+  <div class="about-container">
+
+    <div data-aos="fade-right">
+      <h2>Povestea noastră</h2>
+      <p>
+        Luxe Beauty nu este doar un salon. Este locul unde fiecare detaliu contează,
+        unde frumusețea este tratată ca o artă și fiecare clientă devine o experiență.
+      </p>
+
+      <p>
+        Am creat acest spațiu pentru femeile care nu acceptă compromisuri —
+        care vor eleganță, rafinament și rezultate care atrag priviri.
+      </p>
+
+      <p>
+        Fiecare serviciu este realizat cu precizie, pasiune și atenție absolută,
+        pentru ca tu să pleci nu doar mulțumită, ci impresionată.
+      </p>
+    </div>
+
+    <div data-aos="fade-left">
+      <img src="/images/salon.png" alt="Salon Luxe Beauty">
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us">
+  <h2 data-aos="fade-up">De ce Luxe Beauty</h2>
+
+  <div class="why-grid">
+
+    <div data-aos="fade-up">
+      <h3>✔ Atenție la detalii</h3>
+      <p>Perfecțiunea stă în detalii, iar noi nu le ignorăm niciodată.</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="200">
+      <h3>✔ Produse premium</h3>
+      <p>Folosim doar produse profesionale pentru rezultate impecabile.</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="400">
+      <h3>✔ Experiență completă</h3>
+      <p>Nu vii doar pentru un serviciu, ci pentru o experiență de lux.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team">
+  <h2 data-aos="fade-up">Echipa noastră</h2>
+
+  <div class="team-grid">
+
+    <div class="member" data-aos="fade-up">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <h3>Maria</h3>
+      <p>Specialist unghii</p>
+    </div>
+
+    <div class="member" data-aos="fade-up" data-aos-delay="200">
+      <img src="https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <h3>Andreea</h3>
+      <p>Lash artist</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="blur">
+    <div class="texty">
+        <p class="mucu">E timpul să arăți exact cum îți dorești</p>
+        <p class="kuku">Programează-te acum și vezi diferența de la prima vizită</p>
+    </div>
+
+    <div class="btn">
+        <button class="first open-booking">PROGRAMEAZĂ-TE</button>
+        <a href="/html/services.html"><button class="second">VEZI SERVICII</button></a>
+    </div>
+</section>
+
+
+<div id="chatbot-component"></div>
+<div id="icons-component"></div>
+<div id="cookie-banner-component"></div>
+<div id="footer-component"></div>
+<div id="booking-component"></div>
+<!-- BACK TO TOP -->
+<button id="backToTop">&#8593;</button>
+
+
+<script src="/js/chatbot.js" defer></script>
+<script src="/js/main.js" defer></script>
+<script src="/js/gdpr.js" defer></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
+</script>
+</body>
+</html>

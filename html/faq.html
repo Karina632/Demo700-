@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- SECURITY -->
+  <meta http-equiv="Content-Security-Policy" content="
+default-src 'self';
+img-src 'self' https: data:;
+script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://cdn.emailjs.com;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com;
+font-src 'self' https://fonts.gstatic.com data:;
+connect-src 'self' http://localhost:3000 https://api.emailjs.com https://www.google-analytics.com;
+frame-src https://www.google.com;
+object-src 'none';
+base-uri 'self';
+form-action 'self';
+frame-ancestors 'none';
+">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  <title>FAQ | Luxe Beauty</title>
+
+  <meta name="description" content="Întrebări frecvente despre programări, unghii, gene și serviciile Luxe Beauty.">
+  <meta name="keywords" content="faq salon beauty, întrebări salon">
+
+  <link rel="icon" href="/images/icon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/faq.css">
+  <link rel="stylesheet" href="/css/chatbot.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+     <div id="header-component"></div>
+
+    <section class="about-hero">
+  <div class="about-hero-content" data-aos="fade-up">
+    <h1>FAQ</h1>
+    <p>Întrebări frecvente puse de clienți</p>
+  </div>
+</section>
+
+
+<section class="faq-section">
+  <div class="faq-container">
+    <h2 data-aos="fade-up">Întrebări frecvente</h2>
+    <p class="subtitle" data-aos="fade-up">Tot ce trebuie să știi înainte de programare</p>
+
+    <!-- CATEGORIA 1 -->
+    <div class="faq-category">
+      <h3>Unghii</h3>
+
+      <div class="faq-item">
+        <button class="faq-question">Cât durează o manichiură?</button>
+        <div class="faq-answer">
+          <p>În general între 60 și 120 de minute, în funcție de complexitate.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Cât rezistă oja semipermanentă?</button>
+        <div class="faq-answer">
+          <p>Între 2 și 4 săptămâni, în funcție de stilul de viață și îngrijire.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Pot veni cu model propriu?</button>
+        <div class="faq-answer">
+          <p>Da, acceptăm inspirații și încercăm să recreăm designul dorit.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Este necesară programarea?</button>
+        <div class="faq-answer">
+          <p>Da, recomandăm programarea în avans pentru a evita așteptarea.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORIA 2 -->
+    <div class="faq-category">
+      <h3>Gene</h3>
+
+      <div class="faq-item">
+        <button class="faq-question">Cât durează aplicarea extensiilor?</button>
+        <div class="faq-answer">
+          <p>Între 1.5 și 3 ore, în funcție de volum și tehnică.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Cât rezistă extensiile de gene?</button>
+        <div class="faq-answer">
+          <p>Între 3 și 6 săptămâni, cu întreținere la 2-3 săptămâni.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Pot purta machiaj?</button>
+        <div class="faq-answer">
+          <p>Da, dar evită produsele pe bază de ulei în zona ochilor.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Este dureroasă procedura?</button>
+        <div class="faq-answer">
+          <p>Nu, este complet nedureroasă și relaxantă.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORIA 3 -->
+    <div class="faq-category">
+      <h3>Programări & Info</h3>
+
+      <div class="faq-item">
+        <button class="faq-question">Cum fac o programare?</button>
+        <div class="faq-answer">
+          <p>Poți programa online sau telefonic direct din site.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Pot anula o programare?</button>
+        <div class="faq-answer">
+          <p>Da, te rugăm să anunți cu minim 24h înainte.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Aveți parcare?</button>
+        <div class="faq-answer">
+          <p>Da, există locuri de parcare în apropierea salonului.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Ce metode de plată acceptați?</button>
+        <div class="faq-answer">
+          <p>Cash și card.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Produsele sunt sigure?</button>
+        <div class="faq-answer">
+          <p>Da, folosim doar produse profesionale și certificate.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Ce fac la prima vizită?</button>
+        <div class="faq-answer">
+          <p>Veți avea o scurtă consultație pentru a alege serviciul potrivit.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="blur">
+    <div class="texty">
+        <p class="mucu">Mai ai Întrebări ?</p>
+        <p class="kuku">Echipa noastră este aici pentru a vă ajuta. Contactați-ne și vă vom răspunde cât mai curând posibil.</p>
+    </div>
+
+    <div class="btn">
+        <a href="/html/contact.html"><button class="first">CONTACTEAZĂ-NE</button></a>
+        <a href="tel:+40735078813"><button class="second">SUNĂ ACUM</button></a>
+    </div>
+</section>
+<div id="chatbot-component"></div>
+<div id="icons-component"></div>
+<div id="cookie-banner-component"></div>
+<div id="footer-component"></div>
+<div id="booking-component"></div>
+<!-- BACK TO TOP -->
+<button id="backToTop">&#8593;</button>
+
+    <script src="/js/chatbot.js" defer></script>
+   <script src="/js/main.js"></script>
+     <script src="/js/gdpr.js" defer></script>
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<script>
+  const items = document.querySelectorAll(".faq-item");
+
+  items.forEach(item => {
+    const btn = item.querySelector(".faq-question");
+
+    btn.addEventListener("click", () => {
+      const open = item.classList.contains("active");
+
+      items.forEach(i => {
+        i.classList.remove("active");
+        i.querySelector(".faq-answer").style.maxHeight = null;
+      });
+
+      if (!open) {
+        item.classList.add("active");
+        const answer = item.querySelector(".faq-answer");
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
+</script>
+</body>
+</html>
+

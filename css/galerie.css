@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* =============================HERO=================================== */
+.hero {
+  height: 60vh;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2)),
+              url("../images/blur.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  margin-top: 100px;
+}
+
+.text {
+    font-size: 60px;
+    font-family: "PT Serif";
+}
+
+
+/* ================= GALERIE ================= */
+
+.gallery-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+/* ===== BUTOANE ===== */
+.filter-buttons {
+  margin-bottom: 40px;
+}
+
+.filter-buttons button {
+  padding: 10px 22px;
+  margin: 5px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: black;
+  color: white;
+}
+
+/* ===== GRID ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* ===== CARD ===== */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 320px; /* 🔥 toate la fel */
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+/* imagine */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🔥 nu se mai strică */
+  transition: all 0.4s ease;
+}
+
+/* ===== HOVER PREMIUM ===== */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.065);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* TEXT */
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-family: "Raleway";
+  font-size: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== ANIMATIE FILTRARE ===== */
+.card.hide {
+  opacity: 0;
+  transform: scale(0.85);
+}
+
+.card.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+.gallery-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+/* BUTOANE */
+.filter-buttons {
+  margin-bottom: 40px;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: black;
+  color: white;
+}
+
+/* GRID */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.4s ease;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  transition: 0.4s ease;
+}
+
+/* HOVER PREMIUM */
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* OVERLAY TEXT */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px;
+  color: white;
+  opacity: 0;
+  transition: 0.4s;
+
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* ANIMATIE FADE */
+.card.hide {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+}
+
+.card.show {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.4s ease;
+}
+
+
+
+@media (max-width:768px) {
+
+.gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    height: 250px;
+  }
+
+  
+.text {
+    font-size: 55px;
+}
+
+/* ===== GALERIE MOBILE PREMIUM FIX ===== */
+
+.hero {
+  height: 52vh;
+  padding: 0 20px;
+}
+
+.text {
+  font-size: 44px;
+  line-height: 1.15;
+}
+
+/* SECTION */
+.gallery-section {
+  padding: 55px 16px;
+}
+
+/* FILTER */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-bottom: 28px;
+}
+
+.filter-buttons button {
+  padding: 12px 18px;
+
+  font-size: 13px;
+  border-radius: 10px;
+
+  letter-spacing: 1px;
+}
+
+/* GRID */
+.gallery {
+  gap: 16px;
+}
+
+/* CARD */
+.card {
+  height: 280px;
+  border-radius: 16px;
+}
+
+.overlay {
+  opacity: 1;
+  transform: translateY(0);
+
+  font-size: 14px;
+  padding: 14px;
+}
+
+}

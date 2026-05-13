@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/* ABOUT HERO */
+.about-hero {
+  height: 60vh;
+  margin-top: 80px;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2)),
+              url("../images/blur.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  margin-top: 100px;
+}
+
+.about-hero h1 {
+  font-size: 60px;
+  font-family: "PT Serif";
+}
+
+.about-hero p {
+  margin-top: 10px;
+  font-family: "Raleway";
+  color: #ddd;
+}
+
+/* STORY */
+.about-story {
+  padding: 100px 60px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-container h2 {
+  font-size: 42px;
+  font-family: "PT Serif";
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-family: "Raleway";
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.about-container img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+/* WHY US */
+.why-us {
+  padding: 100px 40px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 40px;
+  font-family: "PT Serif";
+  margin-bottom: 50px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+}
+
+.why-grid h3 {
+  font-family: "Raleway";
+  margin-bottom: 10px;
+}
+
+.why-grid p {
+  color: #666;
+}
+
+/* TEAM */
+.team {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.team h2 {
+  font-family: "PT Serif";
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+}
+
+.member img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.member h3 {
+  margin-top: 15px;
+  font-family: "PT Serif";
+}
+
+.member p {
+  color: gray;
+  font-family: "Raleway";
+}
+
+/* =======================BLUR========================== */
+.blur {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  padding: 150px 0px;
+
+  height: 80vh;
+  background-image: url("../images/blur.png");
+
+}
+
+.mucu {
+  font-size: 50px;
+}
+.kuku {
+  font-size: 18px;
+  color: #d4d4d4;
+  font-family: "Raleway";
+  margin-top: 20px;
+}
+
+.btn {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.btn button {
+  padding: 17px 30px;
+  font-size: 15px;
+  font-family: "Roboto";
+
+  cursor: pointer;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.btn .first {
+  padding: 19px 32px;
+}
+
+.first {
+  background-color: white;
+  transition: all 0.3s ease;
+  border: none;
+
+  color: #000000;
+}
+
+.first:hover {
+  background-color: #efefef;
+  transform: scale(1.05);
+}
+.second {
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+  color: white;
+}
+
+.second:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.03);
+  color: black;
+}
+
+
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 55px;
+  }
+
+  /* ===== ABOUT MOBILE PREMIUM FIX ===== */
+
+.about-hero {
+  height: 52vh;
+  padding: 0 20px;
+  background-position: center;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.about-hero p {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 300px;
+  margin: 12px auto 0;
+}
+
+/* STORY */
+.about-story {
+  padding: 65px 20px;
+}
+
+.about-container {
+  gap: 30px;
+}
+
+.about-container h2 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.about-container p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-container img {
+  height: 320px;
+  border-radius: 14px;
+}
+
+/* WHY US */
+.why-us {
+  padding: 70px 20px;
+}
+
+.why-us h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.why-grid {
+  gap: 24px;
+}
+
+.why-grid div {
+  padding: 24px 18px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* TEAM */
+.team {
+  padding: 70px 20px;
+}
+
+.team h2 {
+  font-size: 32px;
+}
+
+.member img {
+  height: 320px;
+  border-radius: 14px;
+}
+
+.member h3 {
+  font-size: 24px;
+}
+
+/* CTA */
+.blur {
+  height: auto;
+  padding: 90px 20px;
+}
+
+.mucu {
+  font-size: 34px;
+}
+
+.kuku {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.btn {
+  flex-direction: column;
+}
+
+.btn button {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+}
+
+}

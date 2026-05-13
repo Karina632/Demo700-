@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- SECURITY -->
+  <meta http-equiv="Content-Security-Policy" content="
+default-src 'self';
+img-src 'self' https: data:;
+script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://cdn.emailjs.com;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com;
+font-src 'self' https://fonts.gstatic.com data:;
+connect-src 'self' http://localhost:3000 https://api.emailjs.com https://www.google-analytics.com;
+frame-src https://www.google.com;
+object-src 'none';
+base-uri 'self';
+form-action 'self';
+frame-ancestors 'none';
+">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  <title>Contact | Luxe Beauty</title>
+
+  <meta name="description" content="Contactează Luxe Beauty pentru programări rapide, informații și beauty services premium.">
+  <meta name="keywords" content="contact salon beauty, programare unghii, programare gene">
+
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="/css/chatbot.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+     <div id="header-component"></div>
+
+    <section class="hero">
+        <div class="text">
+            <p  data-aos="fade-up">Contactează-ne</p>
+        </div>
+    </div>
+</section>
+
+
+    <section class="contact-section">
+
+  <div class="contact-header" data-aos="fade-up">
+    <h2>Contactează-ne</h2>
+    <p>Programează-te rapid sau trimite-ne un mesaj — revenim cât mai curând pentru confirmare.</p>
+  </div>
+
+  <div class="contact-wrapper">
+
+    <!-- FORM -->
+    <div class="contact-form-box" data-aos="fade-right">
+      <form id="contact-form" novalidate>
+
+  <!-- HONEYPOT ANTI-BOT -->
+  <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px; opacity:0;">
+
+        <div class="input-group">
+          <input type="text" name="name" required>
+          <label>Numele tău</label>
+        </div>
+
+        <div class="input-group">
+          <input type="email" name="email" required>
+          <label>Email</label>
+        </div>
+
+        <div class="input-group">
+          <input type="tel" name="phone" required>
+          <label>Telefon</label>
+        </div>
+
+        <div class="input-group">
+          <textarea name="message" required></textarea>
+          <label>Mesaj</label>
+        </div>
+
+        <button type="submit">Trimite mesaj</button>
+
+        <div class="gdpr-consent">
+  <label>
+    <input type="checkbox" checked required>
+    Sunt de acord cu <a href="/legal/privacy-policy.html">Privacy Policy</a> și <a href="/legal/terms-conditions.html">Terms and Conditions</a>.
+  </label>
+</div>
+
+      </form>
+      <p id="form-status"></p>
+    </div>
+
+    <!-- INFO -->
+    <div class="contact-info-box" data-aos="fade-left">
+
+      <h3>Informații contact</h3>
+
+      <div class="info-item">
+        <img src="/images/phone.png" alt="numar de telefonal salonului">
+        <a href="tel:+40735078813"><p>+40 735 078 813</p></a>
+      </div>
+
+      <div class="info-item">
+        <img src="/images/location.png" alt="">
+        <p>București, România</p>
+      </div>
+
+      <div class="info-item">
+        <img src="/images/whatsapp.png" alt="">
+        <a href="https://wa.me/40735078813" target="_blank">
+          WhatsApp
+        </a>
+      </div>
+
+      <div class="info-item">
+        <img src="/images/time.png" alt="">
+        <p>Luni-Vineri 8:00-18:00 | Sâmbătă 8:00-14:00 | Duminică <span style="color: rgb(243, 42, 42);">închis</span></p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- MAP -->
+  <div class="map" id="mapy" >
+    <iframe src="https://www.google.com/maps?q=Bucuresti&output=embed"></iframe>
+  </div>
+
+</section>
+<div id="chatbot-component"></div>
+<div id="icons-component"></div>
+<div id="cookie-banner-component"></div>
+<div id="footer-component"></div>
+<div id="booking-component"></div>
+<!-- BACK TO TOP -->
+<button id="backToTop">&#8593;</button>
+
+    <script src="/js/chatbot.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/gdpr.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<script>
+function sanitizeInput(str) {
+  return str.replace(/[<>]/g, "").replace(/\s+/g, " ").trim();
+}
+
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function isValidPhone(phone) {
+  return /^07\d{8}$/.test(phone);
+}
+
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+const button = form.querySelector("button");
+
+let lastSubmitTime = 0;
+
+function clearErrors() {
+  form.querySelectorAll("input, textarea").forEach(field => {
+    field.classList.remove("input-error");
+  });
+}
+
+form.querySelectorAll("input, textarea").forEach(field => {
+  field.addEventListener("input", () => {
+    field.classList.remove("input-error");
+    status.innerText = "";
+  });
+});
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  clearErrors();
+
+  if (form.website && form.website.value) {
+    return;
+  }
+
+  const now = Date.now();
+
+  if (now - lastSubmitTime < 5000) {
+    status.style.color = "red";
+    status.innerText = "Te rugăm așteaptă câteva secunde.";
+    return;
+  }
+
+  const nameInput = form.querySelector('input[name="name"]');
+  const emailInput = form.querySelector('input[name="email"]');
+  const phoneInput = form.querySelector('input[name="phone"]');
+  const messageInput = form.querySelector('textarea[name="message"]');
+
+  nameInput.value = sanitizeInput(nameInput.value);
+  emailInput.value = sanitizeInput(emailInput.value);
+  phoneInput.value = sanitizeInput(phoneInput.value);
+  messageInput.value = sanitizeInput(messageInput.value);
+
+  if (nameInput.value.length < 2) {
+    status.style.color = "red";
+    status.innerText = "Introdu un nume valid.";
+    nameInput.classList.add("input-error");
+    return;
+  }
+
+  if (!isValidEmail(emailInput.value)) {
+    status.style.color = "red";
+    status.innerText = "Introdu un email valid.";
+    emailInput.classList.add("input-error");
+    return;
+  }
+
+  if (!isValidPhone(phoneInput.value)) {
+    status.style.color = "red";
+    status.innerText = "Număr invalid.";
+    phoneInput.classList.add("input-error");
+    return;
+  }
+
+  if (messageInput.value.length < 10) {
+    status.style.color = "red";
+    status.innerText = "Mesaj prea scurt.";
+    messageInput.classList.add("input-error");
+    return;
+  }
+
+  button.innerText = "Se trimite...";
+  button.disabled = true;
+
+  fetch("http://localhost:3000/contact", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    name: nameInput.value,
+    email: emailInput.value,
+    phone: phoneInput.value,
+    message: messageInput.value
+  })
+})
+.then(async response => {
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "A apărut o eroare.");
+  }
+
+  return data;
+})
+.then(data => {
+  status.style.color = "green";
+  status.innerText = data.message;
+  form.reset();
+  lastSubmitTime = Date.now();
+})
+.catch(error => {
+  status.style.color = "red";
+  status.innerText = error.message || "A apărut o eroare. Încearcă din nou.";
+})
+.finally(() => {
+  button.innerText = "Trimite mesaj";
+  button.disabled = false;
+});
+});
+</script>
+
+</body>
+</html>

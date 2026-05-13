@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- SECURITY -->
+  <meta http-equiv="Content-Security-Policy" content="
+default-src 'self';
+img-src 'self' https: data:;
+script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://cdn.emailjs.com;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com;
+font-src 'self' https://fonts.gstatic.com data:;
+connect-src 'self' http://localhost:3000 https://api.emailjs.com https://www.google-analytics.com;
+frame-src https://www.google.com;
+object-src 'none';
+base-uri 'self';
+form-action 'self';
+frame-ancestors 'none';
+">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  <title>Servicii | Luxe Beauty</title>
+
+  <meta name="description" content="Descoperă serviciile premium Luxe Beauty: manichiură, extensii gene și beauty services de lux.">
+  <meta name="keywords" content="servicii unghii, extensii gene, beauty premium">
+  <meta name="author" content="Luxe Beauty">
+
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/service.css">
+  <link rel="stylesheet" href="/css/chatbot.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<h1 style="display:none;">Salon unghii și gene premium Luxe Beauty</h1>
+
+<div id="header-component"></div>
+
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="about-hero-content" data-aos="fade-up">
+    <h1>Serviciile Noastre</h1>
+    <p>Servicii premium create pentru femei care vor rezultate impecabile, nu compromisuri.</p>
+  </div>
+</section>
+
+
+
+<section class="services">
+
+  <div class="services-container">
+
+    <!-- UNGHII -->
+    <div class="service-card" data-aos="fade-up">
+      <h2>Servicii Unghii</h2>
+
+      <div class="service-item">
+        <span>Semi / gel unghie naturală</span>
+        <span>140 lei</span>
+      </div>
+
+      <div class="service-item">
+        <span>Construcție S</span>
+        <span>160 lei</span>
+      </div>
+
+      <div class="service-item">
+        <span>Construcție M</span>
+        <span>180 lei</span>
+      </div>
+
+      <div class="service-item">
+        <span>Construcție L</span>
+        <span>210+ lei</span>
+      </div>
+
+      <div class="service-item">
+        <span>Întreținere</span>
+        <span>150 lei</span>
+      </div>
+
+      <div class="service-item">
+        <span>French / Babyboomer</span>
+        <span>+10 lei</span>
+      </div>
+
+      <div class="service-item">
+        <span>Model complex</span>
+        <span>+20 lei</span>
+      </div>
+
+      <div class="service-item">
+        <span>Demontare</span>
+        <span>50 lei</span>
+      </div>
+
+      <p class="service-note">
+        Întreținerea se face la maxim 3 săptămâni.
+      </p>
+
+      <button class="service-btn open-booking">Programează-te</button>
+    </div>
+
+
+    <!-- GENE -->
+    <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+      <h2>Extensii Gene</h2>
+
+      <div class="service-item"><span>Clasic 2D</span><span>200 lei</span></div>
+      <div class="service-item"><span>Clasic 3D</span><span>230 lei</span></div>
+      <div class="service-item"><span>Clasic 4D</span><span>240 lei</span></div>
+      <div class="service-item"><span>Volum</span><span>260 lei</span></div>
+      <div class="service-item"><span>Mega volum</span><span>300 lei</span></div>
+      <div class="service-item"><span>Foxy effect</span><span>300 lei</span></div>
+      <div class="service-item"><span>Wispy effect</span><span>250 lei</span></div>
+      <div class="service-item"><span>Întreținere</span><span>180 lei</span></div>
+
+      <p class="service-note">
+        Întreținerea se face la maxim 3 săptămâni.
+      </p>
+
+      <button class="service-btn open-booking">Programează-te</button>
+    </div>
+
+  </div>
+
+</section>
+
+<div id="chatbot-component"></div>
+<div id="cookie-banner-component"></div>
+<div id="icons-component"></div>
+<div id="footer-component"></div>
+<div id="booking-component"></div>
+<!-- BACK TO TOP -->
+<button id="backToTop">&#8593;</button>
+
+<script src="/js/chatbot.js" defer></script>
+<script src="/js/main.js" defer></script>
+  <script src="/js/gdpr.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
+</script>
+
+</body>
+</html>

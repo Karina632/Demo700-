@@ -1,0 +1,64 @@
+<div class="booking-modal" id="bookingModal">
+  <div class="booking-box">
+
+    <button class="close-btn" id="closeModal" aria-label="Închide fereastra">×</button>
+
+    <h2>Programează-te</h2>
+    <p class="booking-subtitle">
+      Completează detaliile și vei fi redirecționată către WhatsApp pentru confirmare rapidă.
+    </p>
+
+    <form id="bookingForm">
+
+      <div class="form-group">
+        <label for="fullName">Nume & Prenume</label>
+        <input type="text" id="fullName" placeholder="Introdu numele complet" required>
+      </div>
+
+      <div class="form-group">
+        <label for="service">Serviciu</label>
+        <select id="service" required>
+          <option value="">Alege serviciul</option>
+          <option>Unghii</option>
+          <option>Gene</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label for="date">Data</label>
+          <input type="date" id="date">
+        </div>
+
+        <div class="form-group">
+          <label for="time">Interval</label>
+          <select id="time">
+            <option value="">Alege interval</option>
+            <option>10:00 - 13:00</option>
+            <option>13:00 - 16:00</option>
+            <option>16:00 - 19:00</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mesaj</label>
+        <textarea id="message" placeholder="Detalii suplimentare..."></textarea>
+      </div>
+
+     <div class="gdpr-consent">
+  <label>
+    <input type="checkbox" checked required>
+    Sunt de acord cu <a href="/legal/privacy-policy.html" target="_blank">Politica de Confidențialitate</a>
+  </label>
+</div>
+
+      <div class="booking-actions">
+        <button type="submit" class="btn-confirm">CONTINUĂ PE WHATSAPP</button>
+        <button type="button" class="btn-cancel" id="cancelModal">ANULEAZĂ</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>

@@ -1,0 +1,840 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/* HERO */
+.hero {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url("../images/hero.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+
+    margin-top: 75px;
+}
+
+.text {
+    display: block;
+    padding: 80px 90px;
+}
+
+.firstp {
+    display: flex;
+    gap: 5px;
+    color: red;
+    margin-bottom: 20px;
+
+    font-family: "Raleway";
+}
+
+.firstp p {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 80px;
+    color: white;
+    font-family: "PT Serif";
+}
+
+.subtitle {
+    display: block;
+    color: white;
+
+    margin-top: 20px;
+    font-size: 18px;
+
+    font-family: "Raleway";
+}
+
+.subtitle button {
+    margin-top: 30px;
+    padding: 17px 40px;
+    border-radius: 2px;
+    border: none;
+}    
+
+.btn-doi {
+  position: relative;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.798);
+  padding: 10px 20px;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+/* efectul de lumină */
+.btn-doi::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+}
+
+/* animația pe hover */
+.btn-doi:hover::before {
+  animation: shine 1s ease;
+}
+
+/* keyframes */
+@keyframes shine {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 150%;
+  }
+}
+
+
+/* =================COLLECTION==================== */
+.collection-title {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 55px;
+
+  font-family: "PT Serif";
+}
+
+.scnd-p {
+  font-size: 18px;
+  color: rgb(71, 71, 71);
+  margin-top: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 50px 40px;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+
+  height: 430px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+
+  font-size: 32px;
+  color: white;
+  z-index: 2;
+}
+
+.second-p {
+  font-size: 18px;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.846);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.1));
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+
+/* =========================SERVICES======================= */
+/* ================= POPULAR SERVICES ================= */
+
+.popular {
+  padding: 70px 40px;
+  background: #f9f9f9;
+}
+
+.popular-title {
+  text-align: center;
+  font-size: 50px;
+  font-family: "PT Serif";
+}
+
+.popular-title .scnd-p {
+  font-size: 18px;
+  color: gray;
+  margin-top: 10px;
+}
+
+
+
+/* CARD */
+.service-card {
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.service-card img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.service-card:hover {
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-card:hover img {
+  transform: scale(1.06);
+}
+
+/* CONTENT */
+.service-content {
+  padding: 20px;
+}
+
+.service-content h3 {
+  font-family: "PT Serif";
+  font-size: 22px;
+}
+
+.service-content p {
+  font-family: "Raleway";
+  font-size: 14px;
+  color: gray;
+  margin: 5px 0 15px;
+}
+
+/* FOOTER */
+.service-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-footer span {
+  font-size: 14px;
+  color: gray;
+}
+
+.service-footer button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "PT Serif";
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.service-footer button:hover {
+  background: #333;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.678);
+  color: black;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 1px;
+  font-family: "Raleway";
+}
+
+
+/* ===================CIRCLESSS================== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  text-align: center;
+  padding: 90px 40px;
+}
+
+.icon-circle {
+  width: 65px;
+  height: 65px;
+  background-color: rgb(255, 227, 227);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+}
+
+.icon-circle img {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-circle .heart {
+  width: 25px;
+  height: 25px;
+}
+
+.feature .maka {
+  margin-top: 20px;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: bold;
+}
+.feature .kaka {
+  margin-top: 15px;
+  font-family: "Raleway";
+  font-size: 15px;
+}
+
+/* ======================TESTIMONIALE============================ */
+
+
+.testimonials {
+  padding: 100px 40px;
+  background: #f9f9f9;
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 50px;
+  font-family: "PT Serif";
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  
+}
+
+.stars {
+  color: gold;
+  margin-bottom: 15px;
+}
+
+.review {
+  font-family: "Raleway";
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.client img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.role {
+  font-size: 12px;
+  color: gray;
+}
+
+
+
+
+
+/* =======================BLUR========================== */
+.blur {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  padding: 150px 0px;
+
+  height: 80vh;
+  background-image: url("../images/blur.png");
+
+}
+
+.mucu {
+  font-size: 50px;
+}
+.kuku {
+  font-size: 18px;
+  color: #d4d4d4;
+  font-family: "Raleway";
+  margin-top: 20px;
+}
+
+.btn {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.btn button {
+  padding: 17px 30px;
+  font-size: 15px;
+  font-family: "Roboto";
+
+  cursor: pointer;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.btn .first {
+  padding: 19px 32px;
+}
+
+.first {
+  background-color: white;
+  transition: all 0.3s ease;
+  border: none;
+
+  color: #000000;
+}
+
+.first:hover {
+  background-color: #efefef;
+  transform: scale(1.05);
+}
+.second {
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+  color: white;
+}
+
+.second:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.03);
+  color: black;
+}
+
+
+
+
+/* WRAPPER */
+.popular-wrapper {
+  position: relative;
+}
+
+/* SCROLL */
+.popular-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+
+  cursor: grab;
+
+  scroll-snap-type: x mandatory;
+}
+
+.popular-container:active {
+  cursor: grabbing;
+}
+
+
+
+.popular-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* CARD FIX WIDTH */
+.service-card {
+  min-width: 300px;
+  flex: 0 0 auto;
+
+  scroll-snap-align: start;
+}
+
+/* ARROWS */
+.arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.arrow.left {
+  left: -20px;
+}
+
+.arrow.right {
+  right: -20px;
+}
+
+/* DOTS */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.dots span {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.dots span.active {
+  width: 16px;
+  background: black;
+}
+
+
+
+
+@media (max-width:768px) {
+.arrow {
+    display: none;
+  }
+
+  .booking-box {
+    padding: 30px 20px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .service-card {
+    min-width: 85%;
+    max-width: 300px;
+  }
+
+ 
+
+  /* HERO */
+  .hero {
+    height: 85vh;
+  }
+
+   .firstp {
+    font-size: 13px;
+  }
+
+  .title {
+    font-size: 45px;
+    max-width: 200px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .text {
+    padding: 60px 20px;
+  }
+
+
+
+  /* BUTTONS FIX */
+  button {
+    min-height: 48px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  /* COLLECTION */
+  .container {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+
+  .collection-title {
+    font-size: 32px;
+  }
+
+  /* SERVICES */
+  .popular-container {
+    grid-template-columns: 1fr;
+  }
+
+  .popular-title {
+    font-size: 30px;
+  }
+
+  .service-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+
+  /* FEATURES */
+  .features {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 60px 20px;
+  }
+
+  /* TESTIMONIALE */
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-title {
+    font-size: 30px;
+  }
+
+  /* BLUR */
+  .mucu {
+    font-size: 32px;
+  }
+
+  .btn {
+    flex-direction: column;
+  }
+
+  .btn button {
+    width: 100%;
+  }
+
+
+
+/* ===================alt media=================== */
+
+  .hero {
+    height: auto;
+    min-height: 88vh;
+    padding-bottom: 40px;
+    background-position: center;
+  }
+
+  .text {
+    padding: 110px 20px 40px;
+  }
+
+  .firstp {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+  }
+
+  .title {
+    font-size: clamp(38px, 11vw, 52px);
+    line-height: 1.08;
+    max-width: 100%;
+  }
+
+  .subtitle {
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 95%;
+  }
+
+  .subtitle p {
+    max-width: 340px;
+  }
+
+  .btn-doi {
+    margin-top: 24px;
+    width: auto;
+    min-width: 220px;
+    max-width: 100%;
+
+    padding: 15px 24px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    border-radius: 12px;
+  }
+
+  /* CTA SECTION */
+  .blur {
+    height: auto;
+    padding: 90px 20px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .mucu {
+    font-size: clamp(30px, 8vw, 40px);
+    line-height: 1.2;
+    padding: 0 5px;
+  }
+
+  .kuku {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 340px;
+    margin: 16px auto 0;
+  }
+
+  .btn {
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 30px;
+  }
+
+  .btn button {
+    width: 100%;
+    max-width: 280px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+/* ===== MOBILE SLIDER PREMIUM ===== */
+
+  .popular {
+    padding: 60px 16px;
+  }
+
+  .popular-title {
+    font-size: 32px;
+  }
+
+  .popular-title .scnd-p {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .popular-wrapper {
+    margin-top: 25px;
+  }
+
+  .popular-container {
+    gap: 16px;
+    padding: 10px 6px 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .service-card {
+    min-width: 88%;
+    max-width: 88%;
+    scroll-snap-align: center;
+  }
+
+  .service-card img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .service-content {
+    padding: 18px;
+  }
+
+  .service-content h3 {
+    font-size: 20px;
+  }
+
+  .service-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .service-footer button {
+    padding: 12px 16px;
+    font-size: 13px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  .dots {
+    margin-top: 14px;
+  }
+
+ 
+}

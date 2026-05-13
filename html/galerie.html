@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- SECURITY -->
+  <meta http-equiv="Content-Security-Policy" content="
+default-src 'self';
+img-src 'self' https: data:;
+script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://cdn.emailjs.com;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com;
+font-src 'self' https://fonts.gstatic.com data:;
+connect-src 'self' http://localhost:3000 https://api.emailjs.com https://www.google-analytics.com;
+frame-src https://www.google.com;
+object-src 'none';
+base-uri 'self';
+form-action 'self';
+frame-ancestors 'none';
+">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  <title>Galerie | Luxe Beauty</title>
+
+  <meta name="description" content="Descoperă galeria Luxe Beauty: unghii premium, extensii gene și rezultate reale.">
+  <meta name="keywords" content="galerie salon beauty, unghii, gene">
+
+  <link rel="icon" href="/images/icon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/galerie.css">
+  <link rel="stylesheet" href="/css/chatbot.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header-component"></div>
+
+    <section class="hero">
+        <div class="text">
+            <p  data-aos="fade-up">Galeria Luxe Beauty</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="gallery-section">
+
+  <!-- BUTOANE -->
+  <div class="filter-buttons">
+    <button class="active" data-filter="all">ALL</button>
+    <button data-filter="nails">NAILS</button>
+    <button data-filter="lashes">LASHES</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="gallery">
+
+    <!-- CARD -->
+    <div class="card nails">
+      <img src="/images/service4.png">
+      <div class="overlay">Manichiură clasică</div>
+    </div>
+
+    <div class="card nails">
+      <img src="/images/service3.png">
+      <div class="overlay">Gel nails</div>
+    </div>
+
+    <div class="card lashes">
+      <img src="/images/service2.png">
+      <div class="overlay">Extensii gene</div>
+    </div>
+
+    <div class="card lashes">
+      <img src="/images/service1.png">
+      <div class="overlay">Volum rusesc</div>
+    </div>
+
+  </div>
+
+</section>
+<div id="chatbot-component"></div>
+<div id="cookie-banner-component"></div>
+<div id="icons-component"></div>
+<div id="footer-component"></div>
+<div id="booking-component"></div>
+<!-- BACK TO TOP -->
+<button id="backToTop">&#8593;</button>
+
+    <script src="/js/chatbot.js" defer></script>
+   <script src="/js/galerie.js" defer></script>
+     <script src="/js/gdpr.js" defer></script>
+<script src="/js/main.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
+</script>
+
+
+</body>
+</html>
+

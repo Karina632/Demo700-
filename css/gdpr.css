@@ -1,0 +1,181 @@
+
+
+/* ================= LEGAL PAGES ================= */
+.legal-page {
+  max-width: 1000px;
+  margin: 120px auto 80px;
+  padding: 0 20px;
+}
+
+.legal-page h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(34px, 6vw, 58px);
+  margin-bottom: 20px;
+}
+
+.legal-page h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.legal-page p,
+.legal-page li {
+  font-size: 16px;
+  color: #333;
+}
+
+.legal-page ul {
+  padding-left: 20px;
+}
+
+.legal-page a {
+  color: black;
+  font-weight: 600;
+}
+
+
+.legal-page {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+.legal-page h1 {
+  font-family: "Playfair Display";
+  font-size: clamp(42px, 6vw, 68px);
+  margin-bottom: 25px;
+  line-height: 1.1;
+}
+
+.legal-page h2 {
+  font-family: "Playfair Display";
+  font-size: clamp(26px, 4vw, 38px);
+  margin-top: 55px;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.legal-page p,
+.legal-page li {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.9;
+}
+
+.legal-page ul {
+  padding-left: 22px;
+  margin-top: 10px;
+}
+
+.legal-page li {
+  margin-bottom: 10px;
+}
+
+.legal-page strong {
+  color: black;
+}
+
+.legal-page a {
+  color: black;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.legal-update {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: gray;
+}
+
+
+
+/* ================= MOBILE ================= */
+@media (max-width:768px) {
+  .legal-page {
+    margin: 50px auto;
+  }
+
+  .legal-page p,
+  .legal-page li {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+
+  
+  .cookie-banner {
+    align-items: flex-end;
+    padding: 0;
+    background: rgba(0,0,0,0.35);
+  }
+
+  .cookie-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 22px 18px 26px;
+    border-radius: 5px;
+    box-shadow: 0 -10px 35px rgba(0,0,0,0.18);
+    animation: cookieSlideMobile 0.35s ease;
+  }
+
+  @keyframes cookieSlideMobile {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .cookie-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .cookie-box p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .cookie-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .cookie-buttons button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  .cookie-links {
+    margin-top: 14px;
+    gap: 14px;
+    justify-content: center;
+  }
+
+  .cookie-links a {
+    font-size: 13px;
+  }
+
+  #closeCookies {
+    top: 14px;
+    right: 16px;
+    font-size: 26px;
+  }
+
+  
+  .legal-page {
+    margin-top: 100px;
+  }
+
+
+}

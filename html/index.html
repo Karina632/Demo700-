@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- SECURITY -->
+  <meta http-equiv="Content-Security-Policy" content="
+default-src 'self';
+img-src 'self' https: data:;
+script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://cdn.emailjs.com;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com;
+font-src 'self' https://fonts.gstatic.com data:;
+connect-src 'self' http://localhost:3000 https://api.emailjs.com https://www.google-analytics.com;
+frame-src https://www.google.com;
+object-src 'none';
+base-uri 'self';
+form-action 'self';
+frame-ancestors 'none';
+">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  <title>Luxe Beauty București | Unghii Premium, Gene & Programări Online</title>
+
+ <meta name="description" content="Salon premium în București pentru unghii și extensii gene. Programează-te online rapid pentru servicii impecabile, rezultate de lux și beauty care atrage priviri.">
+  <meta name="keywords" content="salon beauty, unghii, gene, manichiura, extensii gene, salon premium">
+  <meta name="author" content="Luxe Beauty">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Luxe Beauty | Salon Premium">
+  <meta property="og:description" content="Unghii și gene premium. Eleganță, stil și programări rapide.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.png">
+
+  <meta name="geo.region" content="RO-B">
+<meta name="geo.placename" content="București">
+<meta name="geo.position" content="44.4268;26.1025">
+<meta name="ICBM" content="44.4268, 26.1025">
+
+  <link rel="icon" href="/images/icon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/gdpr.css">
+  <link rel="stylesheet" href="/css/chatbot.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<h1 style="display:none;">Salon unghii și gene premium Luxe Beauty</h1>
+
+<div id="header-component"></div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="text">
+        <div class="firstp" data-aos="fade-up">
+            <img src="/images/spark.png" loading="lazy" alt="spark" width="25" height="25">
+            <p>SERVICII PREMIUM</p>
+        </div>
+
+        <div class="title" data-aos="fade-up" data-aos-delay="200">
+            <p>Unghii și Gene<br>care atrag toate privirile</p>
+        </div>
+
+        <div class="subtitle" data-aos="fade-up" data-aos-delay="400">
+            <p>Programează-te acum pentru un look impecabil, realizat premium, care te face remarcată instant.</p>
+            <button class="btn-doi open-booking">PROGRAMEAZĂ-TE ACUM</button>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="collection">
+    <div class="collection-title" data-aos="fade-up">
+        <p>Serviciile Noastre</p>
+        <p class="scnd-p">Tot ce ai nevoie pentru un look perfect</p>
+    </div>
+
+    <div class="container">
+
+        <div class="card" data-aos="fade-up">
+            <img src="/images/nails.png" loading="lazy" alt="nails image">
+            <div class="overlay"></div>
+            <div class="card-text">
+                <p>Unghii</p>
+                <p class="second-p">Manichiură perfectă și design modern</p>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <img src="/images/eyelash.png" loading="lazy" alt="lash image">
+            <div class="overlay"></div>
+            <div class="card-text">
+                <p>Gene</p>
+                <p class="second-p">De la natural la volum spectaculos</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- POPULAR -->
+<section class="popular">
+<div class="popular-title" data-aos="fade-up">
+    <p>Servicii Populare</p>
+    <p class="scnd-p">Cele mai alese de cliente</p>
+</div>
+
+
+<div class="popular-wrapper">
+<button class="arrow left">&#10094;</button>
+
+<div class="popular-container">
+
+    <div class="service-card" data-aos="fade-right">
+        <div class="image-wrapper">
+        <img src="/images/service1.png" loading="lazy" alt="nails">
+        <span class="badge">Unghii</span>
+        </div>
+
+        <div class="service-content">
+            <h3>Manichiură Clasică</h3>
+            <p>Eleganță simplă și îngrijire perfectă</p>
+
+            <div class="service-footer">
+                <span>60 min</span>
+                <button class="open-booking">Programează-te</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-card" data-aos="fade-right" data-aos-delay="200">
+        <div class="image-wrapper">
+        <img src="/images/service2.png" loading="lazy" alt="nails">
+        <span class="badge">Unghii</span>
+        </div>
+
+        <div class="service-content">
+            <h3>Unghii Glam</h3>
+            <p>Designuri moderne care ies în evidență</p>
+
+            <div class="service-footer">
+                <span>90 min</span>
+                <button class="open-booking">Programează-te</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="service-card" data-aos="fade-right" data-aos-delay="400">
+        <div class="image-wrapper">
+        <img src="/images/service3.png" loading="lazy" alt="lashes">
+        <span class="badge">Gene</span>
+        </div>
+
+        <div class="service-content">
+            <h3>Gene Volum</h3>
+            <p>Efect intens și privire seducătoare</p>
+
+            <div class="service-footer">
+                <span>120 min</span>
+              <button class="open-booking">Programează-te</button>
+            </div>
+        </div>
+    </div>
+    <div class="service-card" data-aos="fade-right" data-aos-delay="400">
+        <div class="image-wrapper">
+        <img src="/images/service4.png" loading="lazy" alt="lashes">
+        <span class="badge">Unghii</span>
+        </div>
+
+        <div class="service-content">
+            <h3>Unghii Nude</h3>
+            <p>Look natural și rafinat,perfect pentu orice ocazie</p>
+
+            <div class="service-footer">
+                <span>80 min</span>
+                <button class="open-booking">Programează-te</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-card" data-aos="fade-right" data-aos-delay="400">
+        <div class="image-wrapper">
+        <img src="/images/service5.png" loading="lazy" alt="lashes">
+        <span class="badge">Gene</span>
+        </div>
+
+        <div class="service-content">
+            <h3>Gene Naturale</h3>
+            <p>Accent subtil care îți evidențiază frumusețea naturală</p>
+
+            <div class="service-footer">
+                <span>120 min</span>
+                <button class="open-booking">Programează-te</button>
+            </div>
+        </div>
+    </div>
+    <div class="service-card" data-aos="fade-right" data-aos-delay="400">
+        <div class="image-wrapper">
+        <img src="/images/service6.png" loading="lazy" alt="lashes">
+        <span class="badge">Unghii</span>
+        </div>
+
+        <div class="service-content">
+            <h3>Unghii Baby Boomer</h3>
+            <p>Tranziții fine pentru un efect delicat și sofisticat</p>
+
+            <div class="service-footer">
+                <span>120 min</span>
+                <button class="open-booking">Programează-te</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<button class="arrow right">&#10095;</button>
+</div>
+<div class="dots"></div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+
+  <div class="feature">
+    <div class="icon-circle">
+      <img src="/images/star.png" loading="lazy" alt="">
+    </div>
+    <p class="maka">Calitate Premium</p>
+    <p class="kaka">Produse și tehnici profesionale pentru rezultate impecabile</p>
+  </div>
+
+  <div class="feature">
+    <div class="icon-circle">
+      <img src="/images/bifa.png" loading="lazy" alt="">
+    </div>
+    <p class="maka">Specialiști Experți</p>
+    <p class="kaka">Experiență reală și atenție la fiecare detaliu</p>
+  </div>
+
+  <div class="feature">
+    <div class="icon-circle">
+      <img src="/images/heart.png" loading="lazy" alt="">
+    </div>
+    <p class="maka">Atmosferă Relaxantă</p>
+    <p class="kaka">Un spațiu unde vii să te răsfeți și să te simți bine</p>
+  </div>
+
+</section>
+
+<!-- TESTIMONIALE -->
+<section class="testimonials">
+
+  <div class="testimonials-title">
+    <p>Ce spun clientele</p>
+    <p class="scnd-p">Rezultate reale, experiențe reale</p>
+  </div>
+
+  <div class="testimonials-container">
+
+    <div class="testimonial-card">
+      <p class="stars">★★★★★</p>
+      <p class="review">
+"Nu am mai primit atâtea complimente niciodată! Unghiile arată perfect chiar și după 3 săptămâni."
+</p>
+      <div class="client">
+        <img src="/images/client1.png" loading="lazy" alt="">
+        <div>
+          <p class="name">Maria Popescu</p>
+          <p class="role">Clientă fidelă</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="stars">★★★★★</p>
+      <p class="review">
+"Rezultatele sunt WOW, merită fiecare leu! Atmosfera și profesionalismul fac diferența."
+</p>
+      <div class="client">
+        <img src="/images/client2.png" loading="lazy" alt="">
+        <div>
+          <p class="name">Andreea Ionescu</p>
+          <p class="role">Clientă nouă</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="stars">★★★★★</p>
+      <p class="review">
+"Cel mai bun salon la care am fost până acum. Revin de fiecare dată cu încredere!"
+</p>
+      <div class="client">
+        <img src="/images/client3.png" loading="lazy" alt="">
+        <div>
+          <p class="name">Elena Dumitru</p>
+          <p class="role">Clientă fidelă</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="blur">
+    <div class="texty">
+        <p class="mucu">Locurile premium se ocupă rapid.</p>
+        <p class="kuku">Fiecare detaliu contează. Rezervă-ți locul și oferă-ți look-ul pe care îl meriți.</p>
+    </div>
+
+    <div class="btn">
+        <button class="first open-booking">PROGRAMEAZĂ-TE</button>
+        <a href="/html/services.html"><button class="second">VEZI SERVICII</button></a>
+    </div>
+</section>
+<div id="chatbot-component"></div>
+<div id="cookie-banner-component"></div>
+<div id="icons-component"></div>
+<div id="footer-component"></div>
+<div id="booking-component"></div>
+<!-- BACK TO TOP -->
+<button id="backToTop">&#8593;</button>
+
+<script src="/js/chatbot.js" defer></script>
+<script src="/js/script.js" defer></script>
+<script src="/js/main.js" defer></script>
+<script src="/js/gdpr.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
+</script>
+</body>
+</html>
